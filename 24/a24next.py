@@ -24,7 +24,9 @@ for i in range(0, 3):
     equations.append(Eq(s.pz + s.vz*t, pzr +vzr*t))
 
 sol = solve(equations)
-print(sol)
+s = sol[0]
+print("sum of x,y,z coordinates: ", s.get(pxr) + s.get(pyr) + s.get(pzr))
+
 
 
 
